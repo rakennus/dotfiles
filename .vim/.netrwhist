@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/rakennus/.config/i3'
+let g:netrw_dirhist_7='/home/rakennus/.config'
+let g:netrw_dirhist_6='/home/rakennus/Documents/code/IDstack/src/routes/dashboard'
+let g:netrw_dirhist_5='/home/rakennus/Documents/code/IDstack/src/routes/dashboard/connect'
+let g:netrw_dirhist_4='/home/rakennus/Documents/code/IDstack/src/routes/dashboard'
+let g:netrw_dirhist_3='/home/rakennus/Documents/code/IDstack/src/routes'
+let g:netrw_dirhist_2='/home/rakennus/Documents/code/IDstack/src'
+let g:netrw_dirhist_1='/home/rakennus/Documents/code/IDstack'
+let g:netrw_dirhist_0='/home/rakennus/Documents/code/IDstack/src/routes/dashboard'
+let g:netrw_dirhist_9='/home/rakennus/Documents/code/IDstack/src/routes'
