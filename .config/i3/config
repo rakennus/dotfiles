@@ -2,19 +2,20 @@
 set $mod Mod4
 
 # default font
-font pango:helvetica Bold 8
+font pango:Comic Mono 9
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
 # setting wallpaper with feh
-# exec --no-startup-id feh --bg-fill /usr/share/backgrounds/macos-boykisser-gon-killua.png 
-# exec --no-startup-id feh --bg-fill ~/Documents/wallpaper/original-wallpapers/macos_mavericks_wallpaper.jpg
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/boykisser-desktop.png
+exec --no-startup-id feh --bg-fill /usr/share/backgrounds/Loslassen-wallpaper.png
 
 # starting picom
-exec_always --no-startup-id  picom --animation-for-open-window zoom --experimental-backend
+exec_always --no-startup-id  picom --experimental-backend
+
+# starting notification daemon (dunst)
+exec_always --no-startup-id dunst
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -62,39 +63,24 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# not used on small laptop screens
-# horizontal split is the way to go
 # split in horizontal orientation
-# bindsym $mod+g split h
+bindsym $mod+g split h
 
 # split in vertical orientation
-# bindsym $mod+v split v
+bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
-# bindsym $mod+e layout toggle split
+bindsym $mod+q layout tabbed
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -106,7 +92,10 @@ bindsym $mod+Tab focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-# bindsym $mod+d focus child
+bindsym $mod+d focus child
+
+floating_minimum_size 20 x 20
+floating_maximum_size 1600 x 800
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -145,6 +134,9 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+assign [class="Spotify"] 2
+assign [class="discor"] 2
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
@@ -159,20 +151,10 @@ bindsym $mod+Shift+r restart
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -189,25 +171,33 @@ bindsym $mod+r mode "resize"
 #}
 
 # border appearance and thickness
-default_border normal 1
-for_window [all] title_window_icon padding 6px
+default_border pixel 2
+default_floating_border pixel 2
+#hide_edge_borders none
 
-# border color when focused and unfocused
-client.focused      #c0c0c0 #000080 #ffffff #000080 #c0c0c0
-client.unfocused	#c0c0c0 #808080 #c0c0c0 #000080 #c0c0c0
 
-# disable borders for some windows
-for_window [class="firefoxdeveloperedition"] border none
-for_window [class="Spotify"] border none
-for_window [class="discord"] border none
+# window decoration colors
+set $light_gray #b8b8b8
+set $dark_gray #383838
 
-for_window [class="URxvt"] border pixel 1
+# class                 border      backgr.     text       indic.  child_border
+client.focused          $light_gray #ffffff $dark_gray #ffffff $light_gray
+client.focused_inactive $light_gray $light_gray $dark_gray #ffffff $light_gray
+client.unfocused        $dark_gray $dark_gray $light_gray #ffffff $dark_gray
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
 
 # focus shift only when prompted
 focus_on_window_activation none
 
 # add gaps between windows
-gaps inner 12
+gaps inner 20
 
 # make xfce app finder float
 for_window [class="Xfce4-appfinder" instance="xfce4-appfinder"] floating enable
+
+focus_wrapping no
+show_marks no
+

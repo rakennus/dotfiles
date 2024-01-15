@@ -1,7 +1,7 @@
 " givm options
 
 " set gui editor font
-set guifont=Anonymous\ Pro\ 11
+set guifont=Courier\ New\ 10
 " disable menu bar
 set guioptions -=m 
 " disable toolbar

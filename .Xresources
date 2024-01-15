@@ -40,7 +40,7 @@
 
 URxvt.depth: 32
 
-! URxvt.geometry: 80x40
+URxvt.geometry: 80x90
 URxvt.scrollBar: false
 
 URxvt.font: xft:Comic Mono:size=10:
