@@ -1,0 +1,69 @@
+! Colorscheme
+
+! special
+*.foreground:   #ffffff
+*.background: #0c0c0d
+!*.background: [75]#0c0c0d
+!*.cursorColor: #afbfbf
+
+! black
+*.color0: #01060E
+*.color8: #686868
+
+! red
+*.color1: #EA6C73
+*.color9: #F07178
+
+! green
+*.color2: #91B362
+*.color10: #C2D94C
+
+! yellow
+*.color3: #F9AF4F
+*.color11: #FFB454
+
+! blue
+*.color4: #53BDFA
+*.color12: #59C2FF
+
+! magenta
+*.color5: #FAE994
+*.color13: #FFEE99
+
+! cyan
+*.color6: #90E1C6
+*.color14: #95E6CB
+
+! white
+*.color7: #C7C7C7
+*.color15: #ffffff
+
+URxvt.depth: 32
+
+! URxvt.geometry: 80x40
+URxvt.scrollBar: false
+
+URxvt.font: xft:Comic Mono:size=10:
+!URxvt.font: xft:Comic Mono:size=10:
+!URxvt.font: xft:Comic Mono:size=10:
+
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! do not scroll with output
+URxvt.scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt.scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt.scrollTtyKeypress: true
+
+URxvt.internalBorder: 8 
+
+URxvt.perl-ext-common: default,matcher,-confirm-paste
+URxvt.url-launcher: firefox
+URxvt.matcher.button: 1

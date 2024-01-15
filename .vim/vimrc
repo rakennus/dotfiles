@@ -1,0 +1,55 @@
+" load defaults
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
+" ensure that compatiblity for vi
+" is turned off 
+set nocompatible
+
+" tab size to 4 spaces and insert
+" space characters instead of tabs
+set ts=4 sw=4 expandtab
+
+" enable line numbers, status bar and
+" cursorline
+set number laststatus=2 cursorline
+" show command while typing
+set showcmd
+" set colorscheme and turn syntax
+" highlighting on
+colorscheme 256_noir
+syntax on
+
+" use system clipboard
+set clipboard=unnamedplus,unnamed
+" enable use of mouse
+set mouse=a
+" filetype detection
+filetype on
+
+" highlight next matching search strings
+set incsearch 
+" highlight all matching search strings
+set hlsearch
+" case-insensitive search
+set ignorecase
+" case-sensitive when using one
+" or more upper case characters
+set smartcase
+
+" disable text wrapping
+set nowrap
+
+" automatic indentation
+set autoindent
+" advanced indentation for C code
+set cindent
+
+"-------------------------------------
+"Windows specific
+"-------------------------------------
+
+" move history file to vimfiles
+set viminfo+=n$HOME/vimfiles/viminfo
+" disable swap files
+set noswapfile
