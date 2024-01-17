@@ -30,7 +30,7 @@ function rotate {
 	CUR_ROT=$(xrandr -q --verbose | grep $DNAME | cut -d" " -f6)
 
 	NEW_ROT="normal"
-	#CTM="1 0 0 0 1 0 0 0 1"
+	CTM="1 0 0 0 1 0 0 0 1"
     touch_orientation="none"
 
 	# Set the actions to be taken for each possible orientation

@@ -1,10 +1,2 @@
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-[user]
-	name = rakennus
-	email = 54484559+rakennus@users.noreply.github.com
 [credential]
 	helper = store
