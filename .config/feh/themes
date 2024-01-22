@@ -1,0 +1,6 @@
+feh -B black \
+--draw-filename \
+--no-menus \
+--auto-zoom \
+--scale-down \
+--start-at
