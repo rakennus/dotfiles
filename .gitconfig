@@ -3,3 +3,5 @@
 [user]
 	email = rakennusmf@gmail.com
 	name = rakennus
+[init]
+	defaultBranch = master

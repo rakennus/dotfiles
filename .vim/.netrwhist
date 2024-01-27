@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/rakennus/.dotfiles/.git'
 let g:netrw_dirhist_1='/home/rakennus/.dotfiles/.config/conky'
 let g:netrw_dirhist_0='/home/rakennus/.dotfiles/.config/sway'
 let g:netrw_dirhist_9='/home/rakennus/.dotfiles/.config/conky'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_6='/home/rakennus/Downloads'
 let g:netrw_dirhist_5='/home/rakennus/config'
 let g:netrw_dirhist_4='/home/rakennus/.vim'
 let g:netrw_dirhist_3='/home/rakennus/Documents/code/BetterLupo/src'
-let g:netrw_dirhist_2='/home/rakennus/Documents/code/BetterLupo/src/lib'
