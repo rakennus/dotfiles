@@ -11,4 +11,6 @@ end
 #    if test -z "$DISPLAY" -a $XDG_VTNR = 1
 #    	exec startx
 #	end
-#end
+#endG
+
+set -x QT_QPA_PLATFORMTHEME "qt5ct"
