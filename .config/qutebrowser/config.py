@@ -154,3 +154,9 @@ c.url.searchengines = {
 }
 
 c.url.start_pages = ['~/.config/qutebrowser/blank.html']
+
+c.scrolling.smooth = True
+c.scrolling.bar = 'always'
+c.colors.webpage.darkmode.enabled = True
+c.content.blocking.method = 'both'
+c.colors.webpage.preferred_color_scheme = 'dark'

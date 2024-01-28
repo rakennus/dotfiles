@@ -43,23 +43,23 @@ URxvt.depth: 32
 URxvt.geometry: 80x90
 URxvt.scrollBar: false
 
-URxvt.font: xft:monospace:size=10:
+*.font: xft:monospace:size=9
 !URxvt.font: xft:Comic Mono:size=10:
 !URxvt.font: xft:Comic Mono:size=10:
 
-! Restore Ctrl+Shift+(c|v)
+!Restore Ctrl+Shift+(c|v)
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-! do not scroll with output
+!do not scroll with output
 URxvt.scrollTtyOutput: false
 
-! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+!scroll in relation to buffer (with mouse scroll or Shift+Page Up)
 URxvt.scrollWithBuffer: true
 
-! scroll back to the bottom on keypress
+!scroll back to the bottom on keypress
 URxvt.scrollTtyKeypress: true
 
 URxvt.internalBorder: 8 
