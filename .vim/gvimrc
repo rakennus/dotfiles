@@ -2,8 +2,7 @@
 
 " set gui editor font
 " set guifont=Courier\ New\ 10
-set guifont=monospace\ 10
-" set guifont=consolas\ 12
+set guifont=consolas\ 10
 " set guifont=Monaco\ 10
 "
 " disable menu bar
