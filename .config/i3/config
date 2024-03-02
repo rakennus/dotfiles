@@ -235,3 +235,8 @@ show_marks no
 #bindsym XF86AudioPause exec playerctl play-pause
 #bindsym XF86AudioNext exec playerctl next
 #bindsym XF86AudioPrev exec playerctl previous
+
+# keybinding to lock screen
+bindsym $mod+ctrl+l --release exec i3lock -c 000000
+
+exec --no-startup-id xautolock -time 1 -locker "i3lock -c 000000" -detectsleep
