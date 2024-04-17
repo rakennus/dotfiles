@@ -38,7 +38,7 @@ set ignorecase
 set smartcase
 
 " disable text wrapping
-set nowrap
+set wrap
 
 " automatic indentation
 set autoindent

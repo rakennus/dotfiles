@@ -44,7 +44,8 @@ URxvt.depth: 32
 URxvt.scrollBar: false
 
 ! *.font: xft:monospace:size=9
-URxvt.font: xft:Comic Mono:size=10:
+!URxvt.font: xft:Comic Mono:size=10:
+URxvt.font: xft:Ubuntu Mono:size=10:
 
 !Restore Ctrl+Shift+(c|v)
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
