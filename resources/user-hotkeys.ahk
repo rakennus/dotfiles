@@ -1,11 +1,10 @@
-﻿#b::
-Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
-return
+﻿#Requires AutoHotkey v2.0
 
-#enter::
-Run, wt
-return
+#n::Run "notepad"
 
-#w::
-WinClose A
-return
+
+#b::Run "C:\Program Files\Mozilla Firefox\firefox.exe"
+
+#enter::Run "wt"
+
+#w::WinClose "A"
