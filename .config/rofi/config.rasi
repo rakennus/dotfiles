@@ -150,4 +150,6 @@ configuration {
   }
 }
 //@theme "/usr/share/rofi/themes/gruvbox-common.rasi"
-@theme "/usr/share/rofi/themes/Indego.rasi"
+//@theme "/usr/share/rofi/themes/Indego.rasi"
+//@theme "/home/rakennus/.local/share/rofi/themes/launchpad.rasi"
+@theme "/home/rakennus/.local/share/rofi/themes/spotlight-dark.rasi"
