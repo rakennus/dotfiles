@@ -17,7 +17,8 @@ set number laststatus=2 cursorline
 set showcmd
 " set colorscheme and turn syntax
 " highlighting on
-colorscheme 256_noir
+" colorscheme 256_noir
+colorscheme delek
 syntax on
 
 " use system clipboard

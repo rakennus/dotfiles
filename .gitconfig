@@ -1,12 +1,20 @@
-[credential]
-	helper = store
-[user]
-	email = rakennusmf@gmail.com
-	name = rakennus
-[init]
-	defaultBranch = master
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[user]
+	name = rakennus
+    email = rakennusmf@gmail.com
+[credential]
+	helper = store
+[diff]
+	tool = vimdiff
+[difftool]
+    prompt = false
+    # Be able to abort all diffs with `:cq` or `:cquit`
+    trustExitCode = true
+[core]
+    editor = vim~
+[init]
+	defaultBranch = master

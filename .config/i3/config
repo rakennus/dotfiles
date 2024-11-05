@@ -43,7 +43,7 @@ bindsym $mod+x exec --no-startup-id xfce4-session-logout
 bindsym $mod+shift+s exec xfce4-screenshooter
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec terminator
 
 # start web browser
 bindsym $mod+b exec firefox
@@ -151,7 +151,7 @@ bindsym $mod+Shift+r restart
 
 # not needed when using xfce4
 # exit i3 (logs you out of your X session)
-# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -172,26 +172,27 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
-#    i3bar_command i3bar --transparency
-#    status_command i3status
-#
-#    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-#    font pango:Ubuntu 11
-#
-#    colors {
-#        background #00000000
-#        statusline #ffffff
-#        separator #666666
-#
-#        focused_workspace  #4c7899 #285577 #ffffff
-#        active_workspace   #333333 #5f676a #ffffff
-#        inactive_workspace #333333 #222222 #888888
-#        urgent_workspace   #2f343a #900000 #ffffff
-#        binding_mode       #2f343a #900000 #ffffff
-#    }
-#    padding 0 16
-#}
+
+bar {
+    i3bar_command i3bar --transparency
+    status_command i3status
+
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:Ubuntu Medium 11
+
+    colors {
+        background #ffffff
+        statusline #000000
+        separator #666666
+
+        focused_workspace  #4c7899 #285577 #ffffff
+        active_workspace   #333333 #5f676a #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #2f343a #900000 #ffffff
+        binding_mode       #2f343a #900000 #ffffff
+    }
+    padding 0 16px
+}
 
 # border appearance and thickness
 default_border pixel 1

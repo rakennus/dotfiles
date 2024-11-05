@@ -15,4 +15,4 @@ set guioptions-=r
 set guioptions-=L
 
 set shell=powershell
-colorscheme spacecamp
+colorscheme delek
