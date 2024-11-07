@@ -16,6 +16,7 @@
 #
 # xfce-mcs-manager &
 
-picom &
-conky &
-hsetroot -solid "#363636" & 
+picom
+# conky &
+# hsetroot -solid "#363636" & 
+# feh --bg-fill /usr/share/backgrounds/hello-kitty-wallpaper.png
