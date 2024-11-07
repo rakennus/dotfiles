@@ -2,6 +2,8 @@
 [keybindings]
 [profiles]
   [[default]]
+    font = Consolas 10
+    use_system_font = False
     title_transmit_bg_color = "#0076c9"
     title_receive_bg_color = "#2eca0c"
     title_use_system_font = False
@@ -14,6 +16,7 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
   [[New Layout]]
     [[[child0]]]
       type = Window

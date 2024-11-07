@@ -2,8 +2,9 @@
 
 #n::Run "notepad"
 
-
 #b::Run "C:\Program Files\Mozilla Firefox\firefox.exe"
+
+#c::Run "calc"
 
 #enter::Run "wt"
 
