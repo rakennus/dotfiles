@@ -1,0 +1,11 @@
+vim.vim Git.Git GitHub.GitHubDesktop BlenderFoundation.Blender Mozilla.Firefox FreeCAD.FreeCAD Ultimaker.Cura AutoHotkey.AutoHotkey OpenWhisperSystems.Signal Valve.Steam KiCad.KiCad Microsoft.PowerShell GIMP.GIMP Inkscape.Inkscape VideoLAN.VLC yt-dlp.yt-dlp Gyan.FFmpeg HandBrake.HandBrake PrismLauncher.PrismLauncher CPUID.HWMonitor Discord.Discord
+
+non elevated:
+Spotify.Spotify 
+
+manual install required:
+solid edge
+cad assistant
+
+winget install --no-upgrade --silent --accept-source-agreements --accept-package-agreements
+$addPath = 'C:\Program Files\Vim\vim91'
