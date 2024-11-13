@@ -5,6 +5,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# auto completion
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -99,3 +104,4 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\[\e[91m\]$(parse_git_branch)\$ '
 fi
 unset color_prompt force_color_prompt
+. "$HOME/.cargo/env"
