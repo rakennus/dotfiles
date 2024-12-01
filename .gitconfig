@@ -10,6 +10,7 @@
 	helper = store
 [diff]
 	tool = vimdiff
+	prompt = false
 [difftool]
     prompt = false
     # Be able to abort all diffs with `:cq` or `:cquit`

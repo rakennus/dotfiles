@@ -9,9 +9,7 @@ font pango:Comic Mono 9
 exec --no-startup-id dex --autostart --environment i3
 
 # setting wallpaper with feh
-# exec --no-startup-id feh --bg-fill /usr/share/backgrounds/hello-kitty-wallpaper.png
-#exec --no-startup-id feh --bg-fill /usr/share/backgrounds/black_unity_22_wallpaper_mac.png
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/hellsing.jpg
+exec --no-startup-id feh --bg-fill /usr/share/backgrounds/hello-kitty-wallpaper.png
 
 # set keyboard input speed
 exec --no-startup-id xset r rate 300 40
@@ -45,8 +43,7 @@ bindsym $mod+x exec --no-startup-id xfce4-session-logout
 bindsym $mod+shift+s exec xfce4-screenshooter
 
 # start a terminal
-# bindsym $mod+Return exec terminator
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec terminator
 
 # start web browser
 bindsym $mod+b exec firefox
