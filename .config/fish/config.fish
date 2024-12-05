@@ -19,6 +19,12 @@ set -x QT_QPA_PLATFORMTHEME "qt5ct"
 
 set -gx EDITOR /usr/bin/vim
 
+#function fish_prompt
+#  echo (set_color -o $fish_color_cwd)(whoami)@(hostname)(set_color normal):(set_color blue)(prompt_pwd)(set_color normal)\$\ 
+#end
+
+
 function fish_prompt
-  echo (set_color -o $fish_color_cwd)(whoami)@(hostname)(set_color normal):(set_color blue)(prompt_pwd)(set_color normal)\$\ 
+    set __fish_git_prompt_showdirtystate yes
+    printf '%s' $PWD (fish_git_prompt) ' $ '
 end
