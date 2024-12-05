@@ -9,3 +9,39 @@ cad assistant
 
 winget install --no-upgrade --silent --accept-source-agreements --accept-package-agreements
 $addPath = 'C:\Program Files\Vim\vim91'
+
+# programs windows 
+blender
+freecad
+solidedge
+fusion 360
+ansys
+7-zip
+altdrag
+apple driver for icloud bookmarks firefox
+arduino ide
+audacity
+autohotkey editor
+brother printer driver
+discord
+ffmpeg
+gimp
+git
+inkscape
+java
+kicad
+krita
+libreoffice suite
+logitech g hub
+visual studio
+firefox
+thunderbird
+powertoys
+python
+signal
+spotify
+steam
+cura
+united states (international alternate)
+wacom tablet driver/software
+gvim
