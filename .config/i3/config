@@ -9,7 +9,7 @@ font pango:Comic Mono 9
 exec --no-startup-id dex --autostart --environment i3
 
 # start xscreensaver
-exec --no-startup-id xscreensaver
+exec --no-startup-id xscreensaver --no-splash
 
 #disable bluetooth by default
 exec --no-startup-id rfkill block bluetooth
@@ -17,7 +17,7 @@ exec --no-startup-id rfkill block bluetooth
 # setting wallpaper with feh
 # exec --no-startup-id feh --bg-fill /usr/share/backgrounds/hello-kitty-wallpaper.png
 #exec --no-startup-id feh --bg-fill /usr/share/backgrounds/black_unity_22_wallpaper_mac.png
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/hellsing.jpg
+exec --no-startup-id feh --bg-fill /home/rakennus/dotfiles/resources/backgrounds/black_unity_22_wallpaper_mac.png
 
 # set keyboard input speed
 exec --no-startup-id xset r rate 300 40
