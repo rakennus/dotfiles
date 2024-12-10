@@ -21,6 +21,10 @@ set showcmd
 colorscheme delek
 syntax on
 
+" colorize color codes in code
+let g:Hexokinase_highlighters = [ 'backgroundfull' ]
+set termguicolors
+
 " use system clipboard
 set clipboard=unnamedplus,unnamed
 " enable use of mouse
@@ -54,3 +58,4 @@ set cindent
 set viminfo+=n$HOME/vimfiles/viminfo
 " disable swap files
 set noswapfile
+

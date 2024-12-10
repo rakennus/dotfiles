@@ -52,7 +52,8 @@ bindsym $mod+shift+s exec xfce4-screenshooter
 
 # start a terminal
 # bindsym $mod+Return exec terminator
-bindsym $mod+Return exec urxvt
+# bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec xfce4-terminal
 
 # start web browser
 bindsym $mod+b exec firefox
@@ -70,7 +71,7 @@ bindsym $mod+w kill
 bindsym $mod+shift+d exec --no-startup-id dmenu_run
 
 # start application launcher
-bindsym $mod+space exec rofi -show drun
+bindsym $mod+space exec rofi -show
 
 # change focus
 bindsym $mod+h focus left
