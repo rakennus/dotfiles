@@ -307,7 +307,7 @@ Copy the file to $HOME/.config/openbox/ instead. -->
                     <enabled>true</enabled>
                     <name>Konqueror</name>
                 </startupnotify>
-                <command>xfce4-appfinder</command>
+                <command>rofi -show</command>
             </action>
         </keybind>
         <keybind key="W-S-space">
@@ -321,10 +321,10 @@ Copy the file to $HOME/.config/openbox/ instead. -->
         </keybind>
         <keybind key="W-Return">
             <action name="Execute">
-                <command>terminator</command>
+                <command>xfce4-terminal</command>
             </action>
         </keybind>
-        <keybind key="W-e">
+        <keybind key="W-f">
             <action name="Execute">
                 <command>thunar</command>
             </action>
