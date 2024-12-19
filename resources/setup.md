@@ -18,3 +18,7 @@ $ grep c52b /sys/bus/usb/devices/*/idProduct
 ```
 
 ACTION=="add", SUBSYSTEM=="usb", DRIVERS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c547", ATTR{power/wakeup}="disabled", ATTR{driver/3-2.1/power/wakeup}="disabled"
+
+# windows symlink folders from git folders to program config folders:
+junction "C:\Program Files\Siemens\Solid Edge 2024\Template\DIN EN ISO Metric" "C:\Users\rakennus\Documents\cad\Solid-Edge-Templates\DIN EN ISO Metric"
+junction 'target' 'source'
