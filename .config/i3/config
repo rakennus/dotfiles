@@ -8,19 +8,25 @@ font pango:Comic Mono 9
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# start xscreensaver
+exec --no-startup-id xscreensaver --no-splash
+
+#disable bluetooth by default
+exec --no-startup-id rfkill block bluetooth
+
 # setting wallpaper with feh
 # exec --no-startup-id feh --bg-fill /usr/share/backgrounds/hello-kitty-wallpaper.png
 #exec --no-startup-id feh --bg-fill /usr/share/backgrounds/black_unity_22_wallpaper_mac.png
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/hellsing.jpg
+exec --no-startup-id feh --bg-fill /home/rakennus/dotfiles/resources/backgrounds/black_unity_22_wallpaper_mac.png
 
 # set keyboard input speed
 exec --no-startup-id xset r rate 300 40
 
 # start touchscreen keyboard (only shown in tablet mode)
-exec --no-startup-id onboard
+# exec --no-startup-id onboard
 
 # starting picom
-exec_always --no-startup-id  picom
+# exec_always --no-startup-id  picom
 
 # starting notification daemon (dunst)
 exec_always --no-startup-id dunst
@@ -32,7 +38,7 @@ floating_modifier $mod
 # exec --no-startup-id "sh -c 'sleep 1; exec idesk'"
 
 # starting desktop system monitor
-exec --no-startup-id conky
+# exec --no-startup-id conky
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -46,7 +52,8 @@ bindsym $mod+shift+s exec xfce4-screenshooter
 
 # start a terminal
 # bindsym $mod+Return exec terminator
-bindsym $mod+Return exec urxvt
+# bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec xfce4-terminal
 
 # start web browser
 bindsym $mod+b exec firefox
@@ -64,7 +71,7 @@ bindsym $mod+w kill
 bindsym $mod+shift+d exec --no-startup-id dmenu_run
 
 # start application launcher
-bindsym $mod+space exec rofi -show drun
+bindsym $mod+space exec rofi -show
 
 # change focus
 bindsym $mod+h focus left

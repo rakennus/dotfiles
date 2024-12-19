@@ -140,7 +140,7 @@ if s:t_Co >= 256
   hi IncSearch ctermfg=40 ctermbg=NONE cterm=reverse
   hi WildMenu ctermfg=18 ctermbg=220 cterm=bold
   hi ColorColumn ctermfg=16 ctermbg=254 cterm=NONE
-  hi Cursor ctermfg=231 ctermbg=16 cterm=NONE
+  hi Cursor ctermfg=15 ctermbg=0 cterm=NONE
   hi lCursor ctermfg=16 ctermbg=40 cterm=NONE
   hi SpellBad ctermfg=196 ctermbg=NONE cterm=underline
   hi SpellCap ctermfg=30 ctermbg=NONE cterm=underline
