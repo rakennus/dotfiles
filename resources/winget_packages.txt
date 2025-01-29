@@ -1,4 +1,4 @@
-vim.vim Git.Git GitHub.GitHubDesktop BlenderFoundation.Blender Mozilla.Firefox FreeCAD.FreeCAD Ultimaker.Cura AutoHotkey.AutoHotkey OpenWhisperSystems.Signal Valve.Steam KiCad.KiCad Microsoft.PowerShell GIMP.GIMP Inkscape.Inkscape VideoLAN.VLC yt-dlp.yt-dlp Gyan.FFmpeg HandBrake.HandBrake PrismLauncher.PrismLauncher CPUID.HWMonitor Discord.Discord Wacom.WacomTabletDriver
+vim.vim Git.Git GitHub.GitHubDesktop BlenderFoundation.Blender Mozilla.Firefox FreeCAD.FreeCAD Ultimaker.Cura AutoHotkey.AutoHotkey OpenWhisperSystems.Signal Valve.Steam KiCad.KiCad Microsoft.PowerShell GIMP.GIMP Inkscape.Inkscape VideoLAN.VLC yt-dlp.yt-dlp Gyan.FFmpeg HandBrake.HandBrake PrismLauncher.PrismLauncher CPUID.HWMonitor Discord.Discord Wacom.WacomTabletDriver KDE.Krita Audacity.Audacity Spotify.Spotify 
 
 non elevated:
 Spotify.Spotify 
