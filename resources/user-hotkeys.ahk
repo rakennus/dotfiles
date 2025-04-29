@@ -9,3 +9,5 @@
 #enter::Run "wt"
 
 #w::WinClose "A"
+
+#z::Run "C:\Program Files\Vim\vim91\gvim.exe"
