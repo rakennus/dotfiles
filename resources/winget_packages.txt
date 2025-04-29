@@ -1,4 +1,4 @@
-winget install --no-upgrade --silent --accept-source-agreements --accept-package-agreements vim.vim Git.Git GitHub.GitHubDesktop BlenderFoundation.Blender Mozilla.Firefox FreeCAD.FreeCAD Ultimaker.Cura AutoHotkey.AutoHotkey OpenWhisperSystems.Signal Valve.Steam KiCad.KiCad Microsoft.PowerShell GIMP.GIMP.3 Inkscape.Inkscape VideoLAN.VLC yt-dlp.yt-dlp Gyan.FFmpeg HandBrake.HandBrake PrismLauncher.PrismLauncher CPUID.HWMonitor Discord.Discord Wacom.WacomTabletDriver KDE.Krita Audacity.Audacity Rufus.Rufus 7zip.7zip Microsoft.WindowsTerminal Microsoft.VisualStudioCode
+winget install --no-upgrade --silent --accept-source-agreements --accept-package-agreements vim.vim Git.Git GitHub.GitHubDesktop BlenderFoundation.Blender Mozilla.Firefox FreeCAD.FreeCAD Ultimaker.Cura AutoHotkey.AutoHotkey OpenWhisperSystems.Signal Valve.Steam KiCad.KiCad Microsoft.PowerShell GIMP.GIMP.3 Inkscape.Inkscape VideoLAN.VLC yt-dlp.yt-dlp Gyan.FFmpeg HandBrake.HandBrake PrismLauncher.PrismLauncher CPUID.HWMonitor Discord.Discord Wacom.WacomTabletDriver KDE.Krita Audacity.Audacity Rufus.Rufus 7zip.7zip Microsoft.WindowsTerminal Microsoft.VisualStudioCode Governikus.AusweisApp
 
 non elevated:
 Spotify.Spotify 
@@ -7,6 +7,5 @@ manual install required:
 solid edge
 cad assistant
 mpv
+whatsapp
 python (just type python into terminal)
-
-$addPath = 'C:\Program Files\Vim\vim91'
