@@ -59,3 +59,5 @@ set viminfo+=n$HOME/vimfiles/viminfo
 " disable swap files
 set noswapfile
 
+" Run Python script with Ctrl+Enter
+nnoremap <C-CR> :w !python<CR>
