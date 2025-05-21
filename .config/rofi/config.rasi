@@ -189,6 +189,7 @@ configuration {
 window {
     background-color: @background;
     border:           1;
+    width: 33%;
 }
 mainbox {
     border:  0;
